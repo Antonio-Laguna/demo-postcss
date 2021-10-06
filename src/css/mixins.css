@@ -1,0 +1,19 @@
+@define-mixin square $width {
+  height: $width;
+  width: $width;
+}
+
+@define-mixin responsive-square $width {
+  width: $width;
+
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+}
+
+@define-mixin circle $width {
+  @mixin square $width;
+  border-radius: 100%;
+}

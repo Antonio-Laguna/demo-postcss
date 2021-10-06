@@ -1,0 +1,13 @@
+:root {
+  --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --font-code: Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
+  --color-main: #333;
+  --color-primary: #003049;
+}
+
+@custom-media --viewport-sm-only (width <= 42.75em);
+@custom-media --viewport-md (width > 42.75em);
+@custom-media --viewport-lg (width > 64em);
+@custom-media --motionOK (prefers-reduced-motion: no-preference);
+
+@custom-selector :--headings h1, h2, h3, h4, h5, h6;

@@ -1,0 +1,29 @@
+{
+  "name": "demo-postcss",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Usando PostCSS como alternativa a Sass",
+  "main": "index.js",
+  "scripts": {
+    "css:dev": "postcss src/css/index.css -o public/css/index.css",
+    "css:watch": "postcss src/css/index.css -o public/css/index.css --watch",
+    "css:build": "postcss src/css/index.css -o public/css/index.css --env=production"
+  },
+  "keywords": [
+    "sass",
+    "postcss",
+    "css"
+  ],
+  "author": "Antonio Laguna",
+  "license": "MIT",
+  "dependencies": {
+    "cssnano": "^5.0.8",
+    "modern-css-reset": "^1.4.0",
+    "postcss": "^8.3.9",
+    "postcss-cli": "^9.0.1",
+    "postcss-import": "^14.0.2",
+    "postcss-mixins": "^8.1.0",
+    "postcss-nested": "^5.0.6",
+    "postcss-preset-env": "^6.7.0"
+  }
+}
